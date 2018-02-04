@@ -2239,7 +2239,7 @@ html.no-csstransitions .home-content__main {
 
 .stats__count {
     font-family: "montserrat-bold", sans-serif;
-    font-size: 7rem;
+    font-size: 6rem;
     line-height: 1;
     color: #FFFFFF;
     position: relative;
@@ -2503,6 +2503,11 @@ html.no-csstransitions .home-content__main {
     background: #111111;
 }
 
+.s-works .project-wrap {
+    padding: 15rem 0 5rem;
+    background: #111111;
+}
+
 .works-content {
     max-width: 1160px;
     margin-top: -23.4rem;
@@ -2709,6 +2714,9 @@ html.no-csstransitions .home-content__main {
         padding-bottom: 12rem;
     }
     .s-works .intro-wrap {
+        padding: 12rem 0 25.2rem;
+    }
+    .s-works .project-wrap {
         padding: 12rem 0 25.2rem;
     }
     .works-content {
@@ -3610,4 +3618,137 @@ footer .row {
     display: block;
     margin: auto;
     padding: 20px;
+}
+
+
+/* ===================================================================
+ * # projects
+ *
+ * ------------------------------------------------------------------- */
+ .s-projects {
+    padding-top: 16.2rem;
+    padding-bottom: 13.2rem;
+    background-color: #FFFFFF;
+    color: white;
+    position: relative;
+}
+
+
+/* -------------------------------------------------------------------
+ * ## projects list
+ * ------------------------------------------------------------------- */
+.projects-list {
+    margin-top: 6rem;
+}
+
+.projects-list .project-item {
+    margin-bottom: .9rem;
+}
+
+.projects-list .project-item h3 {
+    margin-top: 0;
+}
+
+.projects-list .project-item:nth-child(2n+1) {
+    padding-right: 50px;
+}
+
+.projects-list .project-item:nth-child(2n+2) {
+    padding-left: 50px;
+}
+
+.projects-list .project-text {
+    color: white;
+}
+
+.projects-list .project-text h3 {
+    color: white;
+}
+
+.projects-list .project-text h5 {
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 1.8rem;
+}
+
+.projects-list .project-icon {
+    float: left;
+    color: #336699;
+    font-size: 4.8rem;
+    margin-top: -.6rem;
+}
+
+
+/* -------------------------------------------------------------------
+ * responsive:
+ * projects
+ * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+    .projects-list {
+        max-width: 1000px;
+    }
+    .projects-list .project-item:nth-child(2n+1) {
+        padding-right: 30px;
+    }
+    .projects-list .project-item:nth-child(2n+2) {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .projects-list h3 {
+        font-size: 2.5rem;
+    }
+    .projects-list .project-item:nth-child(2n+1) {
+        padding-right: 20px;
+    }
+    .projects-list .project-item:nth-child(2n+2) {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .projects-list {
+        margin-top: 4.2rem;
+        max-width: 500px;
+        text-align: center;
+    }
+    .projects-list .project-item:nth-child(n) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .projects-list h3 {
+        font-size: 3rem;
+    }
+    .projects-list .project-text {
+        margin-left: 0;
+    }
+    .projects-list .project-icon {
+        font-size: 4.5rem;
+        float: none;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .s-projects {
+        padding-top: 12rem;
+    }
+    .projects-list .project-item:nth-child(n) {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .projects-list h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projects-list .project-item:nth-child(n) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .projects-list h3 {
+        font-size: 2.5rem;
+    }
 }
